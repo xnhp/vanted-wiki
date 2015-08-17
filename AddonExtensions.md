@@ -160,6 +160,7 @@ Since the `InspectorTab` is also an extension of a `JPanel` you just create the 
 If you want to show information regarding the selection of graph elements or changes in the session state (selection of different graph frame), you have to implement the appropriate listeners.
 
 The most important listeners would be
+
 * `org.graffiti.selection.SelectionListener` to listen to selection events
 * `org.graffiti.session.SessionListener` to listen to session change events
 
