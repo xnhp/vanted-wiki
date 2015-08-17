@@ -10,6 +10,7 @@ This entry class must extend `de.ipk_gatersleben.ag_nw.graffiti.plugins.addons.A
 The entry class could look like this:
 
 ```
+#!java
 public class MyAddon extends AddonAdapter {
 	
 	/**
