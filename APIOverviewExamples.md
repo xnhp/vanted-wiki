@@ -26,7 +26,7 @@ To access the node and edge elements of that graph you can simply call the gette
 import org.graffiti.graph.Node;
 import org.graffiti.graph.Edge;
 ...
-
+```
 List<Node> nodes = MainFrame.getInstance().getActiveEditorSession().getGraph().getNodes();
 Collection<Edge> edges = MainFrame.getInstance().getActiveEditorSession().getGraph().getEdges();```
 Make sure that the correct `Node` and `Edge` Classes are imported, since VANTED is not the only one using such names for graph elements.
@@ -44,6 +44,7 @@ The `org.AttributeHelper` provides most of the necessary methods to access graph
 It provides necessary setter and getter methods for the most important graphical attributes of graph elements such as nodes and edges.
 
 To get the label, change it, and set the new label of a node element you do:
+
 ```
 // node is reference to graph node
 // defaultReturn is return value, if node has no label
