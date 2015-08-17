@@ -16,7 +16,7 @@ If you have installed all tools read through the following pages
 * [Add-on development](AddonDevelopment.md)
 * [API Overview and Examples](APIOverviewExamples.md)
 
-The source code is hosted on BitBucket [link] (https://bitbucket.org/matthiak/vanted) as a GIT repository. The project is developed using Eclipse and as such is already setup for being used in Eclipse. 
+The source code is hosted on BitBucket [link] (https://bitbucket.org/vanted-dev/vanted) as a GIT repository. The project is developed using Eclipse and as such is already setup for being used in Eclipse. 
 
 
 Happy Coding!!

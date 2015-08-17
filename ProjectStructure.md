@@ -68,7 +68,7 @@ The descriptor file is an XML document having the following structure.
         <feedname>Example-Add-on Changelog</feedname>
         <feedurl>https://immersive-analytics.infotech.monash.edu/vanted/addons/example/rss-changelog.xml</feedurl>
         <compatibility>2.5.0</compatibility>
-        <available>https://bitbucket.org/matthiak/vanted-addon-example/</available>
+        <available>https://bitbucket.org/vanted-dev/vanted-addon-example/</available>
     </plugindesc>
 </plugin>
 ```

@@ -8,10 +8,10 @@ For this guide all <i>git</i> commands are executed on the command line. Please 
 
 ```
 // clone the VANTED code base
-$ git clone https://bitbucket.org/matthiak/vanted
+$ git clone https://bitbucket.org/vanted-dev/vanted
 
 // clone the VANTED library repository
-$ git clone https://bitbucket.org/matthiak/vanted-lib-repository
+$ git clone https://bitbucket.org/vanted-dev/vanted-lib-repository
 ```
 
 Main stable branch is main.
