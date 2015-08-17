@@ -1,42 +1,17 @@
-# Welcome
+# Develop on and for VANTED
+To develop and change the VANTED source code or develop new Add-ons, follow the guides and tutorials on this wiki.
 
-Welcome to your wiki! This is the default page we've installed for your convenience. Go ahead and edit it.
+* [Prerequisites](Prerequisites.md): Checklist before starting to code
+* [Get the source](Sourcecode.md)
+* [Add-on development](AddonDevelopment.md)
+* [API Overview and Examples](OverviewExamples.md)
 
-## Wiki features
+The source code is hosted on BitBucket [link] (https://bitbucket.org/matthiak/vanted) as a GIT repository. The project is developed using Eclipse and as such is already setup for being used in Eclipse. 
 
-This wiki uses the [Markdown](http://daringfireball.net/projects/markdown/) syntax.
-
-The wiki itself is actually a git repository, which means you can clone it, edit it locally/offline, add images or any other file type, and push it back to us. It will be live immediately.
-
-Go ahead and try:
-
-```
-$ git clone https://matthiak@bitbucket.org/matthiak/vanted.git/wiki
-```
-
-Wiki pages are normal files, with the .md extension. You can edit them locally, as well as creating new ones.
-
-## Syntax highlighting
+## Checklist before start coding
+* Make sure you have at least Java 7 JDK installed. If not, download the latest Java JDK here: [link](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* To work with GIT you either install GIT-bash [link] () (for command line users), or use SourceTree [link](https://www.sourcetreeapp.com/) (graphical), a very nice tool to work with GIT repositories. 
+* Install Eclipse [link](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr)
 
 
-You can also highlight snippets of text (we use the excellent [Pygments][] library).
-
-[Pygments]: http://pygments.org/
-
-
-Here's an example of some Python code:
-
-```
-#!python
-
-def wiki_rocks(text):
-    formatter = lambda t: "funky"+t
-    return formatter(text)
-```
-
-
-You can check out the source of this page to see how that's done, and make sure to bookmark [the vast library of Pygment lexers][lexers], we accept the 'short name' or the 'mimetype' of anything in there.
-[lexers]: http://pygments.org/docs/lexers/
-
-
-Have fun!
+Happy Coding!!
