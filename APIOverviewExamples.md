@@ -1,5 +1,7 @@
 # API Overview and Examples
 
+If you develop a new algorithm for VANTED (see [Add-on development](AddonDevelopment.md)) you most likely want to add/change/delete attributes of graph elements.
+
 To help with the access of graph elements, their attributes, and their containing data several helper classes and methods exist to provide an API to the developer.
 
 Since most of the work is done on and with graph elements, the next paragraph will give an overview about general methods retrieve graph elements.

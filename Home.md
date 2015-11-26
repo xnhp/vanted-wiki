@@ -10,10 +10,11 @@ To develop and change the VANTED source code or develop new Add-ons, follow the 
 * To work with GIT on Windows you either install GIT-bash [link](https://msysgit.github.io/) (for command line users), or use SourceTree [link](https://www.sourcetreeapp.com/) (graphical), a very nice tool to work with GIT repositories. 
 * Install Eclipse [link](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr)
 
-If you have installed all tools read through the following pages
+If you have installed all tools read through the following pages for.
 
 * [Get the VANTED source](Sourcecode.md)
 * [Add-on development](AddonDevelopment.md)
+* [An introduction into VANTED Graph Drawing](VantedSoftwareDesign.md)
 * [API Overview and Examples](APIOverviewExamples.md)
 
 The source code is hosted on BitBucket [link] (https://bitbucket.org/vanted-dev/vanted) as a GIT repository. The project is developed using Eclipse and as such is already setup for being used in Eclipse. 
