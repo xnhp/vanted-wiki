@@ -23,8 +23,7 @@ First you retrieve the object instance of the MainFrame class. This object is a 
 Then you retrieve the active session and then retrieve the graph from that session.
 
 To access the node and edge elements of that graph you can simply call the getter of the Graph object
-```
-#!java
+```java
 ...
 import org.graffiti.graph.Node;
 import org.graffiti.graph.Edge;
@@ -48,8 +47,7 @@ It provides necessary setter and getter methods for the most important graphical
 
 To get the label, change it, and set the new label of a node element you do:
 
-```
-#!java
+```java
 // node is reference to graph node
 // defaultReturn is return value, if node has no label
 
@@ -84,8 +82,7 @@ There are useful methods even outside the HelperClass hierarchy.
 The most important would be loading of graph files and creation of sessions.
 
 To create a new view to display a graph you can call:
-```
-#!java
+```java
 File file = <path to graph file>
 MainFrame.getInstance().loadGraph(file);
 ```
