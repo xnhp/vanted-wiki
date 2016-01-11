@@ -14,7 +14,7 @@ If you have installed all tools read through the following pages for.
 
 * [Get the VANTED source](Sourcecode.md)
 * [Add-on development](AddonDevelopment.md)
-* [An introduction into VANTED Graph Drawing](VantedSoftwareDesign.md)
+* [VANTED intern](VantedIntern.md)
 * [API Overview and Examples](APIOverviewExamples.md)
 
 The source code is hosted on BitBucket [link] (https://bitbucket.org/vanted-dev/vanted) as a GIT repository. The project is developed using Eclipse and as such is already setup for being used in Eclipse. 
