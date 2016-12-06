@@ -16,7 +16,7 @@ $ git clone https://bitbucket.org/vanted-dev/vanted-lib-repository
 
 Main stable branch is main.
 
-Main development is happening on the `develop`-branch. This is not allways a stable branch.
+Main development is happening on the `develop`-branch. This is not always a stable branch.
 
 Now start eclipse and select a workspace. This would be the directory you created before.
 
