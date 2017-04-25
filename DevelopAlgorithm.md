@@ -1,19 +1,19 @@
-# Write a new algorithm
+# Writing a new algorithm
 
-Algorithm extend the functionality of VANTED. They can be called be clicking on a menu-item or on a button in the button-bar or by manually executing them in the frame of the side-tab UI.
+Algorithms extend the functionality of VANTED. They can be called by clicking on a menu-item or on a button in the button-bar or by manually executing them in the frame of the side-tab UI.
 
 Using parameters algorithms can be configured to match the task in hand. 
 
-Before an algorithm is executed, a check can be performed to see if the algorithm is able to perform on the given graph or a given selection of graph elements. If it cannot execute it can throw an exception to inform the user.
+Before an algorithm is executed, a check can be performed to see if the algorithm is able to perform on the given graph or a given selection of graph elements. If it cannot execute, it can throw an exception to inform the user.
 
-Algorithms must either implement the `org.graffiti.plugin.algorithm.Algorithm` interface or simply extend `org.graffiti.plugin.algorithm.AbstractEditorAlgorithm` which implements already most of the methods in the interface. They are primarily supposed to work with a graph, who's reference is given to the algorithm before it is executed.
+Algorithms must either implement the `org.graffiti.plugin.algorithm.Algorithm` interface or simply extend `org.graffiti.plugin.algorithm.AbstractEditorAlgorithm`, which implements already most of the methods in the interface. They are primarily supposed to work with a graph, who's reference is given to the algorithm before it is executed.
 
-You should however override or implement at least the following methods.
+You should, however, override or implement at least the following methods.
 
-* `public String getName()` to give the algorithm a name in VANTED
-* `public void execute()` which gets called, when the algorithm is called in VANTED 
-* `public String getDescription()` a textual (or HTML) description of the algorithm
-* `public void check() throws PreconditionException` a check method, if the algorithm will work with the given graph
+* `public String getName()` to give the algorithm a name in VANTED.
+* `public void execute()` which gets called, when the algorithm is called in VANTED.
+* `public String getDescription()` a textual (or HTML) description of the algorithm.
+* `public void check() throws PreconditionException` a check method, if the algorithm will work with the given graph.
 * `public void reset()` to reset the algorithm to a defined initial state.
 * `public String getCategory()` the Menu category. A '.'-seperated string giving the menu-hierarchy this algorithm will be embedded in.
 
@@ -74,32 +74,32 @@ public class MyAlgorithm extends AbstractAlgorithm {
 }
 ```
 
-Algorithms are usually executed using the API call `GravistoService.getInstance().runAlgorithm(myAlgo, myActionEvent)`. Usually an action event is not needed and can be null.
+Algorithms are usually executed using the API call `GravistoService.getInstance().runAlgorithm(myAlgo, myActionEvent)`. Usually an action event is not needed and can be `null`.
 
-If an algorithm is executed using the above API call it lives through a small lifecycle, which means certain methods are called in a defined order
+If an algorithm is executed using the above API call, it lives through a small lifecycle, which means certain methods are called in a defined order.
 
-1. attach()
-	* with that call, the current active graph and a possible selection containig graph elements (nodes, edges) are provided to the algorithm
-2. setActionEvent()
-	* a possible action event is provided
-3. getParameters()
-	* an array of 'Parameter' objects can be returned by the algorithm, if it is configurable
-4. setParameters()
-	* an array of the given Parameters is returned in the same order they were given with probably new values set
-5. check()
-	* this is the place where the algorithm can check all the conditions to run or fail
-6. execute()
-	* finally the algorithm is executed
+1. `attach()`
+	* with that call, the current active graph and a possible selection containing graph elements (nodes, edges) are provided to the algorithm.
+2. `setActionEvent()`
+	* a possible action event is provided.
+3. `getParameters()`
+	* an array of 'Parameter' objects can be returned by the algorithm, if it is configurable.
+4. `setParameters()`
+	* an array of the given Parameters is returned in the same order they were given with probably values newly set.
+5. `check()`
+	* this is the place where the algorithm can check all the conditions to run or fail.
+6. `execute()`
+	* finally the algorithm is executed.
 
-### Add the algorithm to the menu
+### Adding the algorithm to the menu
 
 To add an algorithm to the menu and make it directly accessible to the user, you can set a category your algorithm will fit into.
 
-This category will reflect the hierarchy as seen in the menus. E.g. your algorithm does something on the network its cateogory would be `"Network"`. If it is not only network but also something special e.g. hierarchy, then the category would be `"Network.Hierarchy"`
+This category will reflect the hierarchy as seen in the menus. E.g. your algorithm does something on the network its category would be `"Network"`. If it is not only network, but also something special e.g. hierarchy, then the category would be `"Network.Hierarchy"`
 
-This category is only the level your algorithm will reside in. So if your algorithm is named "My Hierarchy Algorithm" it will appear in the menu under 'Network' -> 'Hierarchy' as entry 'My Hierarchy Algorithm'.
+This category is only the level your algorithm will reside in. So, if your algorithm is named "My Hierarchy Algorithm", it will appear in the menu under 'Network' -> 'Hierarchy' as entry 'My Hierarchy Algorithm'.
 
-To tell VANTED where to put your algorithm simple return your category as a period separated string in the method `public String getCategory()`
+To tell VANTED where to put your algorithm, simply return your category as a period separated string in the method `public String getCategory()`
 
 ```java	
 ...
@@ -114,10 +114,10 @@ To tell VANTED where to put your algorithm simple return your category as a peri
 
 #### Background Execution
 
-When using the API call to execute the algorithm,  is executed in the current thread. Which means it is usually executed from the AWT thread. If you implement a computational demanding algorithm use the provided [Background thread API](BackGroundAPI.md)
+When using the API call to execute the algorithm, it is executed on the current thread. Meaning it is usually executed from the AWT thread. If you implement a computational demanding algorithm, use the provided [Background thread API](BackGroundAPI.md)
 
 #### Transactions
 
-If an algorithm changes attributes of nodes and edges as a result of some computation, it should use the [Transaction API](Transactions.md) 
+If an algorithm changes attributes of nodes and edges as a result of some computation, it should use the [Transaction API](Transactions.md).
 
-See [API Overview and Examples](APIOverviewExamples.md) to get more information of how to access graph elements and data that this algorithm could work on.
+See [API Overview and Examples](APIOverviewExamples.md) to get more information on how to access graph elements and data that this algorithm could work on.
