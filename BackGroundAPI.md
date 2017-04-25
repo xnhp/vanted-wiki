@@ -4,7 +4,7 @@ If you execute an algorithm or any kind of task that takes longer and can block 
 
 VANTED supports those tasks by providing the `BackgroundTaskHelper`.
 
-It not only executes the time-consuming task in an extra thread but can also execute code, that updates the user interface on the AWT thread, after finishing the calculations. It also supports a callback interface, where continuous updates (progress bar, status messages) during algorithm execution can be messaged and displayed to the user. 
+It not only executes the time-consuming task on an extra thread, but can also execute code, that updates the user interface on the AWT thread, after finishing the calculations. It also supports a callback interface, where continuous updates (progress bar, status messages) during algorithm execution can be messaged and displayed to the user. 
 
 The `BackgroundTaskHelper` has multiple different methods to call, depending on the complexity of the task you want to execute.
 
@@ -36,11 +36,11 @@ And that's it. The tasks will be executed instantly and if the task takes longer
 
 ### Executing simple background-task / ui-update-task pair with progress
 
-If your algorithm can provide updates during its long running task, it can implement the interface `BackgroundTaskStatusProvider` which contains several methods that are queried periodically to show update messages or the value for the progress bar.
+If your algorithm can provide updates during its long running task, it can implement the interface `BackgroundTaskStatusProvider`, which contains several methods that are queried periodically to show update messages or the value for the progress bar.
 
 The `BackgroundTaskStatusProvider` interface also enables the user to send a *cancel* event to the background task. It is the responsibility of the task to check for an abort call and act accordingly.
 
-If you have just a custom background task and want to show some progress you can use the `BackgroundTaskStatusProviderSupportingExternalCall` as shown in the following example
+If you have just a custom background task and want to show some progress, you can use the `BackgroundTaskStatusProviderSupportingExternalCall` as shown in the example below
 
 ```java
 final BackgroundTaskStatusProviderSupportingExternalCall status = 
