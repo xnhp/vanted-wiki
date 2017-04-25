@@ -1,6 +1,6 @@
 # Project structure and compilation
 
-The following project structure shows the the minimum mandatory files to create an Addon. The downloaded example contains a lot more files but most of them are not mandatory.
+The following project structure shows the minimum mandatory files to create an Add-on. The downloaded example contains a lot more files, but for the most part they are not mandatory.
 
 ```
 |   .classpath
@@ -28,19 +28,19 @@ The following project structure shows the the minimum mandatory files to create 
 ```
 The main structure is taken from Maven. 
 
-* Java source files should be created in `src/main/java`
-* additional resources such as images, xml files, etc. should be put under `src/main/resources` 
-* Java compiled classes end up in `target/classes`
-* additional JAR libraries reside in the `lib` directory
+* Java source files should be created in `src/main/java`.
+* Additional resources such as images, xml files, etc. should be put under `src/main/resources`.
+* Java compiled classes end up in `target/classes`.
+* Additional JAR libraries reside in the `lib` directory.
 
 The root directory contains the following files
 
 * The `.classpath` and `.project` files are Eclipse project files.
-* `createAdd-on.xml` is an Ant script to create the distributable JAR file, that can be loaded in VANTED
+* `createAdd-on.xml` is an Ant script to create the distributable JAR file, that can be loaded in VANTED.
 
-The following files are mandatory for an Add-on
+The following files are mandatory for an Add-on:
 
-* `ExemplaryAddon.java` is the entry point for VANTED for the Add-on. This class must extend `AddonAdapter` to be recognized. The name of the class is not important. It will be defined in the XML-descriptor file below
+* `ExemplaryAddon.java` is the entry point for VANTED for the Add-on. This class must extend `AddonAdapter` to be recognized. The name of the class is not important. It will be defined in the XML-descriptor file below.
 * `StartVantedWithAddon.java` is a helper class to start VANTED from the IDE with the Add-on, without having the JAR installed.
 * `Add-on-Example.xml` is the descriptor file for the Add-on. Details below.
 
@@ -108,7 +108,7 @@ To start your Add-on just replace `"Add-on-Example.xml"` with the name of your d
 ## Create distributable JAR
 
 To create the distributable JAR you use the `createAdd-on.xml` Ant script in the root directory of the project.
-If executed it will create a fat-JAR containing the Java classes, resources and all additional JAR files, that were found in the `lib` directory.
+If executed, it will create a fat-JAR containing the Java classes, resources and all additional JAR files, that were found in the `lib` directory.
 
 As a standard configuration the Ant script will also include the Java source code.
 
@@ -135,7 +135,3 @@ You have to edit the Ant script to match the resulting JAR file name to the desc
 ```
 <jar destfile="Add-on-Example.jar" ...
 ```
-
-
-
-
