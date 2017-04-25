@@ -1,6 +1,6 @@
 # Transactions
 
-Suppose we have a network consisting of several houndrets or thousands of nodes and edges and your algorithm is changing a lot of attributes of those elements, e.g. layout, adding new information, changing visual properties based on some calculations.
+Suppose we have a network consisting of several hundreds or thousands of nodes and edges and your algorithm is changing many of the attributes of those elements, e.g. layout, adding new information, changing visual properties based on some calculations.
 
 If you would update each attribute of each graph element, each time the graphical component of that graph element has to be updated and a `repaint()` call is issued to show the user the updated view.
 
@@ -8,18 +8,18 @@ For large amounts of changes this would slow down the update and drawing process
 
 To avoid that, VANTED has a transaction API that collects all the changes to the attributes, combines attribute changes and sends out the changes in one block to a transaction listener, which is usually also the view the graph is displayed in.
 
-Also if you use transactions, VANTED will make sure, that the graphical updates are executed on the AWT thread.
+Also, if you use transactions, VANTED will make sure, that the graphical updates are executed on the AWT thread.
 
-### Create a transaction
+### Creating a transaction
 
-To create a transaction you need to tell a listener manager, that you are going to initiate a new transaction. This manager is always present in the `graph` object, that is made available during the `attach()` lifecycle (see [Algorithm Development](DevelopAlgorithm.md))
+To create a transaction you need to tell a listener manager, that you are going to initiate a new transaction. This manager is always present in the `graph` object, that is made available during the `attach()` lifecycle. (see [Algorithm Development](DevelopAlgorithm.md))
 
 ```java
 ...
 graph.getListenerManager().transactionStarted(this);
 ...
 ```
-The `this` gives the transaction manager a reference to who started the transaction.
+The `this` gives the transaction manager a reference to whom started the transaction.
 
 To finish it, just call
 ```java
@@ -32,7 +32,7 @@ After this call, all transaction listeners (usually also all views that draw gra
 
 #### Example
 
-This example will implement a simple algorithm to move all nodes by 10 pixels in *x* and *y* direction
+This example will implement a simple algorithm to move all nodes by 10 pixels in *x* and *y* direction.
 
 We also make use of some helper methods implemented in `AbstractAlgorithm` as well as some API calls from the `AttributeHelper` (see [API Overview](APIOverviewExamples.md))
 
