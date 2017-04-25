@@ -1,11 +1,10 @@
-
 ## Create a new Tab for user interaction
 
-Tabs are places where you can add a custom user interface that provides visible custom information or actions of your Add-on.
+Tabs are places, where you can add a custom user interface that provides visible custom information or actions of your Add-on.
 
-Each tab has to be instanciated and added to the tab-array field in the entry-class (see above).
+Each tab has to be instantiated and added to the tab-array field in the entry-class (see above).
 
-Each tab must extend the `org.graffiti.plugin.inspector.InspectorTab` class. You should 
+Each tab must extend the `org.graffiti.plugin.inspector.InspectorTab` class.
 
 The following example shows the minimum implementation
 ```java
@@ -45,16 +44,16 @@ public class MyTab extends InspectorTab {
 }
 ```
 
-Since the `InspectorTab` is also an extension of a `JPanel` you just create the UI-content in a separate method or in the constructor.
+Since the `InspectorTab` is also an extension of `JPanel`, you can just create the UI-content in a separate method or in the constructor.
 
-If you want to show information regarding the selection of graph elements or changes in the session state (selection of different graph frame), you have to implement the appropriate listeners.
+If you want to show information regarding the selection of graph elements or any changes in the session state (e.g. selection of a different graph frame), you have to implement the appropriate listeners.
 
 The most important listeners would be
 
-* `org.graffiti.selection.SelectionListener` to listen to selection events
-* `org.graffiti.session.SessionListener` to listen to session change events
+* `org.graffiti.selection.SelectionListener` to listen to selection events.
+* `org.graffiti.session.SessionListener` to listen to session change events.
 
-If you implement the Selection Listener you have two methods, where the first is the most usefull.
+If you implement the `SelectionListener` you have two methods, where the first is the more useful.
 
 ```java
 ...
@@ -73,7 +72,7 @@ If you implement the Selection Listener you have two methods, where the first is
 ```
 The first method is always called when a selection change happens.
 
-If you implement the `SessionListener` you can change the content of the tab according to the new graph being displayed in the active session context.
+If you implement the `SessionListener`, you can change the content of the tab according to the new graph being displayed in the active session context.
 
 ```java
 ...
