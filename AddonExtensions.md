@@ -1,9 +1,9 @@
 # Extend VANTED
-## Add new Algorithms, Views, and Visual Graph Components
+## Adding new Algorithms, Views, and Visual Graph Components
 
-To extend the functionality of VANTED you can create Add-On's that provide new 
+To extend the functionality of VANTED you can create Add-ons that provide new 
 
-* algorithms (Graphical, Computational, etc)
+* algorithms (Graphical, Computational, etc.)
 * views (graphical display of graph or other information)
 * Buttons
 * Menu-items
@@ -12,16 +12,16 @@ To extend the functionality of VANTED you can create Add-On's that provide new
 * tools
 * file formats
 
-The following image highlights areas, that support custom extension provided by the addon.
+The following image highlights areas, that support custom extension provided by the add-on:
 
 ![](images/overviewLocationGUIExtensions.jpg)
 
-All those extensions extend certain interfaces / classes to garuantee support of certain methods.
+All those extensions extend certain interfaces / classes to guarantee support of certain methods.
 
-To extend the functionality, you add the extension to provided array fields, that are present in the main entry class of the Add-on. (see [Project Structure](ProjectStructure.md) for details.
+To extend the functionality, you add the extension to the provided array fields, that are present in the main entry class of the Add-on. (see [Project Structure](ProjectStructure.md) for details.
 This entry class must extend `de.ipk_gatersleben.ag_nw.graffiti.plugins.addons.AddonAdapter` to have the necessary fields.
 
-If you take the example addon class, it will look like this. This addon makes use of every possible extension possibility in VANTED.
+If you take the example add-on class, it will look like this. This add-on makes use of every possible extension possibility in VANTED.
 
 ```java
 public class MyAddon extends AddonAdapter {
@@ -102,9 +102,9 @@ public class MyAddon extends AddonAdapter {
 }
 ```
 
-The following chapters will give an introduction on each addon extension.
+The following chapters will give an introduction on each add-on extension.
 
-#### Add new tabs to appear in the list of tabs
+#### Adding new tabs to appear in the list of tabs
 
 This example shows, how a new 'MyTab'-tab is added to the list of new tabs.
 
@@ -116,7 +116,7 @@ This example shows, how a new 'MyTab'-tab is added to the list of new tabs.
 
 For how to implement a new Tab read [this](DevelopTabs.md).
 
-#### Add new Algorithms
+#### Adding new Algorithms
 
 You can simply add a number of new algorithms by adding new algorithm objects to the `this.algorithms` array
 
@@ -126,5 +126,4 @@ You can simply add a number of new algorithms by adding new algorithm objects to
 		};
 ```
 
-For how to implement a new algorithm read [here](DevelopAlgorithm.md)
-
+For how to implement a new algorithm, you could read [here](DevelopAlgorithm.md).
