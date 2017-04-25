@@ -6,7 +6,7 @@ It includes examples for new document type readers as well as action buttons, th
 
 ## Implementing a new experiment document reader
 
-If you develop a new document reader you can directly extend the `ExperimentDataDragAndDropHandler` class and implement the only method in there
+If you develop a new document reader, you can directly extend the `ExperimentDataDragAndDropHandler` class and implement the only method in there.
 
 ```java
 class MyExperimentDataDragAndDropHandler
@@ -49,7 +49,7 @@ class MyExperimentDataDragAndDropHandler
 }
 ```
 
-You then have to register this drag'n drop handler to Vanted by calling. This is usually done in your Addon startup code. (see [Add-on development](AddonDevelopment.md))
+You then have to register this drag'n drop handler to Vanted by calling the method below. This is usually done in your Addon startup code. (see [Add-on development](AddonDevelopment.md))
 
 ```Java
 	GravistoMainHelper.addDragAndDropHandler(new MyExperimentDataDragAndDropHandler());
@@ -61,7 +61,7 @@ Usually after an experiment file has been read and you didn't override or ignore
 
 ![](images/ExperimentReceiverDialog.jpg)
 
-You can add your own action button to this list. They are also extending the `Algorithm` interface and get executed, if clicked on it.
+You can add your own action button to this list. They are also extending the `Algorithm` interface and get executed, if clicked on.
 
 ```Java
 class MyAbstractExperimentDataProcessor {
@@ -88,7 +88,7 @@ class MyAbstractExperimentDataProcessor {
 }
 ```
 
-Finally, you have to register this processor with VANTED by calling. This is usually done in your Addon startup code. (see [Add-on development](AddonDevelopment.md))
+Finally, you have to register this processor with VANTED by calling the method below. This is usually done in your Add-on startup code. (see [Add-on development](AddonDevelopment.md))
 
 ```Java 			
 ExperimentDataProcessingManager.addExperimentDataProcessor(new PutIntoSidePanel());
