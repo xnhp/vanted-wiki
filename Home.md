@@ -1,7 +1,7 @@
 # Develop on and for VANTED
 This wiki is intented to be a source for developers for the VANTED platform. 
 
-To get more information about what VANTED is, visit the project [website](https://immersive-analytics.infotech.monash.edu/vanted).
+To get more information about what VANTED is, visit the [project website](https://www.cls.uni-konstanz.de/vanted/vanted/overview/).
 
 To develop and change the VANTED source code or develop new Add-ons, follow the guides and tutorials on this wiki.
 
