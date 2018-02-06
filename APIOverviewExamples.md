@@ -36,7 +36,7 @@ Collection<Edge> edges = graph.getEdges();
 ```
 Make sure that the correct `Node` and `Edge` Classes are imported, since VANTED is not the only one using such names for graph elements.
 
-## Helper Classes (aka API)
+## Helper Classes
 
 If you're very curious about what helper classes exist, you can list them using Eclipse. They all implement the `org.HelperClass` interface. Open the type hierarchy of that class and you would see all implementing classes.
 
@@ -81,14 +81,13 @@ AttributeHelper.setPosition(node, position);
 ```
 
 ## API calls not found in HelperClass hierarchy
-There are useful methods even outside the HelperClass hierarchy.
-The most important would be loading of graph files and creation of sessions.
+There are useful methods even outside the HelperClass hierarchy. The most important would be loading of graph files and creation of sessions. For the complete reference, see the [Vanted API](http://kim25.wwwdns.kim.uni-konstanz.de/vanted/javadoc/).
 
 To create a new view to display a graph you can call:
 ```java
 File file = <path to graph file>
 MainFrame.getInstance().loadGraph(file);
 ```
-This call will take care of loading the graph and creating a session (see above) and creating a view to display the graph.
+This call will take care of loading the graph and creating a session (see above) and creating a view to display the graph. 
 
 Supported file formats are: `GML, GraphML, SBML, SBGN-PD, ...` to name the most important ones.
