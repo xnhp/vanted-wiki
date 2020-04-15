@@ -49,7 +49,7 @@ class MyExperimentDataDragAndDropHandler
 }
 ```
 
-You then have to register this drag'n drop handler to Vanted by calling the method below. This is usually done in your Addon startup code. (see [Add-on development](AddonDevelopment.md))
+You then have to register this drag'n drop handler to Vanted by calling the method below. This is usually done in your Addon startup code. (see [[Add-on development|AddonDevelopment]])
 
 ```Java
 	GravistoMainHelper.addDragAndDropHandler(new MyExperimentDataDragAndDropHandler());
@@ -88,7 +88,7 @@ class MyAbstractExperimentDataProcessor {
 }
 ```
 
-Finally, you have to register this processor with VANTED by calling the method below. This is usually done in your Add-on startup code. (see [Add-on development](AddonDevelopment.md))
+Finally, you have to register this processor with VANTED by calling the method below. This is usually done in your Add-on startup code. (see [[Add-on development|AddonDevelopment]])
 
 ```Java 			
 ExperimentDataProcessingManager.addExperimentDataProcessor(new PutIntoSidePanel());
