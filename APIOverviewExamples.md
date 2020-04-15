@@ -1,6 +1,6 @@
 # API Overview and Examples
 
-If you are developing a new algorithm for VANTED (see [Add-on development](AddonDevelopment.md)), you will most likely want to add/change/delete attributes of graph elements.
+If you are developing a new algorithm for VANTED (see [[Add-on development|AddonDevelopment]]), you will most likely want to add/change/delete attributes of graph elements.
 
 To help with the access of graph elements, their attributes, and their containing data several helper classes and methods exist to provide an API to the developer.
 
@@ -8,7 +8,7 @@ Since most of the work is done on and with graph elements, the next paragraph wi
 
 ### Access to graph and its elements
 
-Usually, if you are implementing an algorithm, a reference to the graph will be given before the algorithm is executed. See [Add new Algorithms, Views, and Visual Graph Components](AddonExtensions.md) for details.
+Usually, if you are implementing an algorithm, a reference to the graph will be given before the algorithm is executed. See [[Add new Algorithms, Views, and Visual Graph Components|AddonExtensions]] for details.
 
 You can also get access to the graph elements by retrieving a **Session**-object, which is an object containing the reference to the graph, the view that draws the graph, etc.
 Every opened document in VANTED has its own session. Only one of those sessions can be active, which is usually the one, the user is currently interacting with.
