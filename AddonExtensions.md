@@ -18,7 +18,7 @@ The following image highlights areas, that support custom extension provided by 
 
 All those extensions extend certain interfaces / classes to guarantee support of certain methods.
 
-To extend the functionality, you add the extension to the provided array fields, that are present in the main entry class of the Add-on. (see [Project Structure](ProjectStructure.md) for details.
+To extend the functionality, you add the extension to the provided array fields, that are present in the main entry class of the Add-on. (see [[Project Structure|ProjectStructure]] for details.
 This entry class must extend `de.ipk_gatersleben.ag_nw.graffiti.plugins.addons.AddonAdapter` to have the necessary fields.
 
 If you take the example add-on class, it will look like this. This add-on makes use of every possible extension possibility in VANTED.
@@ -114,7 +114,7 @@ This example shows, how a new 'MyTab'-tab is added to the list of new tabs.
 		};
 ```		
 
-For how to implement a new Tab read [this](DevelopTabs.md).
+For how to implement a new Tab read [[this|DevelopTabs]].
 
 #### Adding new Algorithms
 
@@ -126,4 +126,4 @@ You can simply add a number of new algorithms by adding new algorithm objects to
 		};
 ```
 
-For how to implement a new algorithm, you could read [here](DevelopAlgorithm.md).
+For how to implement a new algorithm, you could read [[here|DevelopAlgorithm]].
