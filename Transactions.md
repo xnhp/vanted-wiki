@@ -12,7 +12,7 @@ Also, if you use transactions, VANTED will make sure, that the graphical updates
 
 ### Creating a transaction
 
-To create a transaction you need to tell a listener manager, that you are going to initiate a new transaction. This manager is always present in the `graph` object, that is made available during the `attach()` lifecycle. (see [Algorithm Development](DevelopAlgorithm.md))
+To create a transaction you need to tell a listener manager, that you are going to initiate a new transaction. This manager is always present in the `graph` object, that is made available during the `attach()` lifecycle. (see [[Algorithm Development|DevelopAlgorithm]])
 
 ```java
 ...
@@ -34,7 +34,7 @@ After this call, all transaction listeners (usually also all views that draw gra
 
 This example will implement a simple algorithm to move all nodes by 10 pixels in *x* and *y* direction.
 
-We also make use of some helper methods implemented in `AbstractAlgorithm` as well as some API calls from the `AttributeHelper` (see [API Overview](APIOverviewExamples.md))
+We also make use of some helper methods implemented in `AbstractAlgorithm` as well as some API calls from the `AttributeHelper` (see [[API Overview|APIOverviewExamples]])
 
 
 ```java
