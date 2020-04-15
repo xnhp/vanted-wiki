@@ -8,10 +8,10 @@ For this guide all *git* commands are executed on the command line. Please, refe
 
 ```
 # Clone the VANTED code base:
-$ git clone https://bitbucket.org/vanted-dev/vanted
+$ git clone https://github.com/LSI-UniKonstanz/vanted
 
 # Clone the VANTED library repository:
-$ git clone https://bitbucket.org/vanted-dev/vanted-lib-repository
+$ git clone https://github.com/LSI-UniKonstanz/vanted-lib-repository
 ```
 
 Main stable branch is `master`.
