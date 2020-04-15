@@ -12,6 +12,6 @@ Import the Add-on example project into the VANTED workspace.
 
 The following explains the most important parts of the directory structure, necessary files and some method calls of the VANTED API.
 
-* [Project Structure and Compilation](ProjectStructure.md)
+* [[Project Structure and Compilation|ProjectStructure]]
 
-* [Adding new Algorithms, Views, and Visual Graph Components](AddonExtensions.md)
+* [[Adding new Algorithms, Views, and Visual Graph Components|AddonExtensions.md]]
