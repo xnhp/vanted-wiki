@@ -57,7 +57,7 @@ The following image shows two nodes and one edge as well as the edges of the `JC
 
 Also attributes can have a graphical representation as well, called *Graph Attribute Components*. Examples would be labels, images or charts. During startup, a scan process adds entries from pre-defined maps between attributes and attribute components. These relationships have to be created by the implementor. 
 
-VANTED comes with a list of pre-implemented components, that are stored in a map returning the matching component to an attribute. Of course, this map can be extended by adding custom components through extensions (see [Add-on development](AddonDevelopment.md)).
+VANTED comes with a list of pre-implemented components, that are stored in a map returning the matching component to an attribute. Of course, this map can be extended by adding custom components through extensions (see [[Add-on development|AddonDevelopment]]).
 
 
 These attribute components are dependent components, since they usually do not exist without a node or edge component. Attribute components are positioned relative to their 'parent' component. Here, parent is not the parent as in Java Swing, but only the logical parent.
