@@ -114,10 +114,10 @@ To tell VANTED where to put your algorithm, simply return your category as a per
 
 #### Background Execution
 
-When using the API call to execute the algorithm, it is executed on the current thread. Meaning it is usually executed from the AWT thread. If you implement a computational demanding algorithm, use the provided [Background thread API](BackGroundAPI.md)
+When using the API call to execute the algorithm, it is executed on the current thread. Meaning it is usually executed from the AWT thread. If you implement a computational demanding algorithm, use the provided [[Background thread API|BackGroundAPI]]
 
 #### Transactions
 
-If an algorithm changes attributes of nodes and edges as a result of some computation, it should use the [Transaction API](Transactions.md).
+If an algorithm changes attributes of nodes and edges as a result of some computation, it should use the [[Transaction API|Transactions]].
 
-See [API Overview and Examples](APIOverviewExamples.md) to get more information on how to access graph elements and data that this algorithm could work on.
+See [[API Overview and Examples|APIOverviewExamples]] to get more information on how to access graph elements and data that this algorithm could work on.
