@@ -4,4 +4,4 @@ This documents shows a sequence diagram of how an experiment file is loaded, if 
 
 ![](images/LoadingExperiments.png)
 
-To extend the functionality (new document types etc.) read the [Extending the Experiment loading capabilities](ExtendingExpLoading.md) document.
+To extend the functionality (new document types etc.) read the [[Extending the Experiment loading capabilities|ExtendingExpLoading]] document.
