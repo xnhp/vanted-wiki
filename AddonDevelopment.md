@@ -4,7 +4,7 @@ VANTED is an extendible software. Additional functionality can be provided by Ad
 
 Add-ons can use the provided APIs to easily access and change attributes, setup and call algorithms, etc.
 
-To start development it is a good idea to download the example-addon code from [here](https://kim25.wwwdns.kim.uni-konstanz.de/vanted/addons/example/vanted-addon-example.zip).
+To start development it is a good idea to download the example-addon code from [here](https://github.com/LSI-UniKonstanz/vanted-addon-example/releases/tag/v2.0.1).
 
 It is, as the VANTED project itself, already an eclipse project. After you have unzipped the file, copy the directory to the workspace directory, where the VANTED source resides. 
 
