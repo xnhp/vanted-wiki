@@ -11,7 +11,7 @@ For this guide all *git* commands are executed on the command line. Please, refe
 $ git clone https://github.com/LSI-UniKonstanz/vanted
 
 # Clone the VANTED library repository:
-$ git clone https://github.com/LSI-UniKonstanz/vanted-lib-repository
+$ git clone https://github.com/LSI-UniKonstanz/vanted-libraries
 ```
 
 Main stable branch is `master`.
