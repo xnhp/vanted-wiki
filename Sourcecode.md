@@ -29,7 +29,7 @@ To do so:
 * Select `File -> Import` from the Menu.
 * select `Existing Projects` into Workspace.
 * select the root directory which is the directory you created before.
-* if not already selected, selected `vanted` and `vanted-lib-repository` from the list.
+* if not already selected, selected `vanted` and `vanted-libraries` from the list.
 
 ### Check Encoding
 If you are working on Windows, please make sure, that the character encoding is set to UTF-8. You can set the encoding in the Eclipse preferences under `General -> Encoding`. Make sure the Text file encoding is set to UTF-8. After changing the encoding Eclipse will build the project again.
