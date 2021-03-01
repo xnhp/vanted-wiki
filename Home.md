@@ -5,10 +5,11 @@ To get more information about what VANTED is, visit the [project website](http:/
 
 To develop and change the VANTED source code or develop new add-ons, follow the guides and tutorials in this wiki.
 
-## Checklist before start coding
+## Checklist before you start coding
 * Make sure you have at least Java 8 JDK installed. If not, download the latest Java JDK here: [link](https://www.oracle.com/java/technologies/javase-downloads.html).
 * To work with GIT on Windows you either install GIT-bash: [link](https://gitforwindows.org) (for command line users), or use SourceTree: [link](https://www.sourcetreeapp.com), a very nice graphical tool to work with GIT repositories. 
 * Install Eclipse: [link](https://www.eclipse.org/downloads/packages).
+* Set up [[Code Formatting|Code-Formatting]].
 
 Once you have installed all the necessary tools, you could read the following pages for more information: 
 
