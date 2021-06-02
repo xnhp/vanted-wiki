@@ -80,6 +80,8 @@ position.setLocation(position.getX() + 10, position.getY() + 10);
 AttributeHelper.setPosition(node, position);
 ```
 
+Information on the structure/layout of graph element attributes can be found on [this page](AttributeStructure)
+
 ## API calls not found in HelperClass hierarchy
 There are useful methods even outside the HelperClass hierarchy. The most important would be loading of graph files and creation of sessions. For the complete reference, see the [Vanted API](http://kim25.wwwdns.kim.uni-konstanz.de/vanted/javadoc/).
 
