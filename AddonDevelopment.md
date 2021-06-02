@@ -39,11 +39,11 @@ Notes:
 - After setup, the run configuration that is created automatically when launching a `main` method via the right-click menu should work. There might be issues with some packages but the auto-suggested fix (`—add-exports`) should work. This will modify `.idea/compiler.xml`.
 - Any instance of Vanted (particularly these invoked through an IDE) will look for addon jars in `%appdata%\Roaming\VANTED\addons` and use these — don't get confused.
 
-## Plugin Development in IntelliJ
+### Plugin Development in IntelliJ
 
 - Plugins can be included as modules, like above (even multiple ones) — In Project Structure → Modules → [Addon Module] → Dependencies, add the `vanted` module to be a dependency for your plugin. Set the scope of the depency (rightmost column) to "Provided".
 
-### Loading multiple Plugins
+#### Loading multiple Plugins
 
 1. Create a new module (e.g. "dev-utilities"). 
 2. Add the modules of your plugins as depencies of this new module (as described above).
@@ -77,7 +77,7 @@ Notes:
     }
     ```
 
-### Building a JAR distributable
+#### Building a JAR distributable
 
 The way to go is 
 
